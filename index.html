@@ -23,9 +23,11 @@
             <!-- bottone per cui al click parte la mail  -->
             <button @click = " getEmail ">genera email da API</button>
             <!-- creazione della lista di email  -->
-            <ul v-for = " a in arrEmail ">
-                <li> {{ a }} </li>
-            </ul>
+            <!-- condizione per cui se l'array arriva a 10 allora mostra  -->
+            <ol v-show = " arrEmail.length === 10 ">
+                <!-- ciclo per cui arrivano le mail  -->
+                <li v-for = " a in arrEmail "> {{ a }} </li>
+            </ol>
         </div>
     </div>
 </body>

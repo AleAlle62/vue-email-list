@@ -16,12 +16,6 @@ new Vue ({
                     // console.log(axiosRisposta)
                     // pusha la risposta nell'array 
                     this.arrEmail.push(axiosRisposta.data.response)
-
-                    // BONUS ??
-                    // if(this.arrEmail[i] === 10){
-                    //     console.log('prova tutto insieme')
-                    // }
-
                 })
             }
         },
