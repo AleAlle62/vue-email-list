@@ -7,6 +7,8 @@ new Vue ({
     // metodo per creazione delle mail 
     methods : {
         getEmail(){
+            // inizializzazione ad ogni click 
+            this.arrEmail = []
             // 10 mail 
             for (let i = 0; i < 10; i++){
                 //API
